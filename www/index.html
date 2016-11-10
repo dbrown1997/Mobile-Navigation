@@ -5,72 +5,27 @@
 <link rel="stylesheet" href="jquerymobile/jquery.mobile-1.4.5.min.css">
 <script src="jquerymobile/jquery-1.11.1.min.js"></script>
 <script src="jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/index.js"></script>
 </head>
 <body>
 
 <div data-role="page" id="pageone">
-  
-  <div data-role="panel" id="myPanel">
-       <h2>Panel Header..</h2><br>
-         <a data-position="fixed" href="#pagetwo">Go to Page Two</a><br>
-         <a data-position="fixed" href="#pagethree">Go to Page Three</a><br><br>
-          <a href="#pageone">Close panel</a>
-      </div>
-  
-  
-  <div data-role="header" data-position="fixed">
-        <a href="#myPanel" class="ui-btn ui-btn-inline">
-          <img src="menuIcon.png" alt="Menu Icon" width="18" height="18">  
-        </a>
-    <h1>Welcome To My Homepage</h1> 
-  </div>
+        
+ 	<div data-role="header">Header</div>
+        
+  	<div role="main" class="ui-content">
+    
+  		<input type="text" id="textinput" value=""  />
+  	    
+        <button onClick="submitText()">Submit A</button>
+  	    <button id="submitButton">Submit B</button>
 
-  <div data-role="main" class="ui-content">
-    <p>Welcome! If you click on the link below, it will take you to Page Two or Three.</p>
-  </div>
+    </div>
+        
+    <div data-role="footer">Footer</div>
+	</div>
 
-  <div data-role="footer" data-position="fixed">
-    <h1>Footer Text</h1>
-    <a href="#pagetwo">Go to Page Two</a>
-    <a href="#pagethree">Go to Page Three</a>
-  </div>
-</div>
-
-<div data-role="page" id="pagetwo">
-  <div data-role="header" data-position="fixed">
-    <h1>Welcome To My Second Homepage</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <p>This is Page Two. If you click on the link below, it will take you to Page One or Three.</p>
-  </div>
-
-  <div data-role="footer" data-position="fixed">
-    <h1>Footer Text</h1>
-        <a href="#pageone">Go to Page One</a>
-    <a href="#pagethree">Go to Page Three</a>
-  </div>
-</div>
-  
-<div data-role="page" id="pagethree">
-  <div data-role="header" data-position="fixed">
-    <h1>Welcome To My Third Homepage</h1>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <p>This is Page Three. If you click on the link below, it will take you to Page One or Two.</p>
-  </div>
-
-  <div data-role="footer" data-position="fixed">
-    <h1>Footer Text</h1>
-     <a href="#pageone">Go to Page One</a>
-    <a href="#pagetwo">Go to Page Two</a>
-  </div>
-</div>
-
-  
-
- 
+</body>
 
 
 </body>
